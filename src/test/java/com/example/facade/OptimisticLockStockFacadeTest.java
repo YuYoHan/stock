@@ -1,8 +1,8 @@
 package com.example.facade;
 
 import com.example.synchronicity.entity.Stock;
+import com.example.synchronicity.facade.OptimisticLockStockFacade;
 import com.example.synchronicity.repository.StockRepository;
-import com.example.synchronicity.service.PessimisticLockStockService;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -13,8 +13,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 
 @SpringBootTest

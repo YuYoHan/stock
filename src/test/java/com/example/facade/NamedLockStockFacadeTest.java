@@ -1,6 +1,7 @@
 package com.example.facade;
 
 import com.example.synchronicity.entity.Stock;
+import com.example.synchronicity.facade.NamedLockStockFacade;
 import com.example.synchronicity.repository.StockRepository;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.AfterEach;
@@ -13,12 +14,10 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 @SpringBootTest
 class NamedLockStockFacadeTest {
     @Autowired
-    private  NamedLockStockFacade namedLockStockFacade;
+    private NamedLockStockFacade namedLockStockFacade;
     @Autowired
     private StockRepository stockRepository;
 

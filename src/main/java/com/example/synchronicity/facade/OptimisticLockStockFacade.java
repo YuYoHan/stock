@@ -1,4 +1,4 @@
-package com.example.facade;
+package com.example.synchronicity.facade;
 
 import com.example.synchronicity.service.OptimisticLockStockService;
 import lombok.RequiredArgsConstructor;
