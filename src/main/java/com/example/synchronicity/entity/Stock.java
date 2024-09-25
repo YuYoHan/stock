@@ -20,7 +20,7 @@ public class Stock {
     private Long quantity;
 
 
-    public void decreaseStock(Long amount) {
+    public  void decreaseStock(Long amount) {
         if(this.quantity - quantity < 0) {
             throw new RuntimeException("재고는 0개 미만이 될 수 없습니다.");
         }
